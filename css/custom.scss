@@ -1,9 +1,16 @@
 // Custom Sass Colors
 $black: #141414;
+$white: #FFFFFF;
+$purple: #805FA8;
+$test-gray: rgb(205, 205, 205);
+
+.btn {
+    background-color: purple;
+}
 
 html body {
     background-color: $black;
-    color: #FFFFFF;
+    color: $white;
     a:link { text-decoration: none; }
     a:visited { text-decoration: none; }
     a:hover { text-decoration: none; }
@@ -12,19 +19,24 @@ html body {
 }
 
 .navbar {
-    background-color: green;
-    opacity: 1;
-
+    background-color: $black;
+    // --bs-navbar-color: $purple;
     .nav-link {
-        color: red;
-    }
-    .nav-link.active{
-    color: blue;
+        color: $white;
     }
     .navbar-nav {
         .nav-link.active {
-            color: purple;
+            color: $white;
         }
-
     }
+    .navbar-brand {
+        color: $white;
+    }
+    .navbar-toggler {
+        background-color: $purple;
+    }
+}
+
+#hero {
+    background-color: $test-gray;
 }

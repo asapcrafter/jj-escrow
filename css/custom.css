@@ -1,3 +1,7 @@
+.btn {
+  background-color: purple;
+}
+
 html body {
   background-color: #141414;
   color: #FFFFFF;
@@ -21,19 +25,26 @@ html body a:active {
 }
 
 .navbar {
-  background-color: green;
-  opacity: 1;
+  background-color: #141414;
 }
 
 .navbar .nav-link {
-  color: red;
-}
-
-.navbar .nav-link.active {
-  color: blue;
+  color: #FFFFFF;
 }
 
 .navbar .navbar-nav .nav-link.active {
-  color: purple;
+  color: #FFFFFF;
+}
+
+.navbar .navbar-brand {
+  color: #FFFFFF;
+}
+
+.navbar .navbar-toggler {
+  background-color: #805FA8;
+}
+
+#hero {
+  background-color: #cdcdcd;
 }
 /*# sourceMappingURL=custom.css.map */
