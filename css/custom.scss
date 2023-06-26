@@ -1,3 +1,30 @@
-.test {
-    color: purple
+// Custom Sass Colors
+$black: #141414;
+
+html body {
+    background-color: $black;
+    color: #FFFFFF;
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:active { text-decoration: none; }
+    font: normal normal medium 18px/32px Manrope;
+}
+
+.navbar {
+    background-color: green;
+    opacity: 1;
+
+    .nav-link {
+        color: red;
+    }
+    .nav-link.active{
+    color: blue;
+    }
+    .navbar-nav {
+        .nav-link.active {
+            color: purple;
+        }
+
+    }
 }

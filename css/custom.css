@@ -1,4 +1,39 @@
-.test {
+html body {
+  background-color: #141414;
+  color: #FFFFFF;
+  font: normal normal medium 18px/32px Manrope;
+}
+
+html body a:link {
+  text-decoration: none;
+}
+
+html body a:visited {
+  text-decoration: none;
+}
+
+html body a:hover {
+  text-decoration: none;
+}
+
+html body a:active {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: green;
+  opacity: 1;
+}
+
+.navbar .nav-link {
+  color: red;
+}
+
+.navbar .nav-link.active {
+  color: blue;
+}
+
+.navbar .navbar-nav .nav-link.active {
   color: purple;
 }
 /*# sourceMappingURL=custom.css.map */
