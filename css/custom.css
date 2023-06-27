@@ -2,49 +2,92 @@
   background-color: purple;
 }
 
+span.purple {
+  color: #805FA8;
+}
+
 html body {
   background-color: #141414;
   color: #FFFFFF;
   font: normal normal medium 18px/32px Manrope;
 }
-
 html body a:link {
   text-decoration: none;
 }
-
 html body a:visited {
   text-decoration: none;
 }
-
 html body a:hover {
   text-decoration: none;
 }
-
 html body a:active {
   text-decoration: none;
+}
+
+section {
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .navbar {
   background-color: #141414;
 }
-
 .navbar .nav-link {
   color: #FFFFFF;
 }
-
 .navbar .navbar-nav .nav-link.active {
   color: #FFFFFF;
 }
-
 .navbar .navbar-brand {
   color: #FFFFFF;
 }
-
 .navbar .navbar-toggler {
   background-color: #805FA8;
 }
 
 #hero {
-  background-color: #cdcdcd;
+  background-color: rgb(205, 205, 205);
 }
-/*# sourceMappingURL=custom.css.map */
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card-body {
+  background-color: purple;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-container:hover .card-body {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  backface-visibility: hidden;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+  background-color: red;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background-color: red;
+}/*# sourceMappingURL=custom.css.map */
