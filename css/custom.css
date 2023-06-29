@@ -113,7 +113,11 @@ section {
   transform-style: preserve-3d;
 }
 
-.card-container:hover .card-body {
+.flip-card {
+  color: #ff0000;
+}
+
+.flip .card-body {
   transform: rotateY(180deg);
 }
 

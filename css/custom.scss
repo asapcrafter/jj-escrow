@@ -114,8 +114,16 @@ section {
 	transition: transform 0.8s;
 	transform-style: preserve-3d;
 }
-.card-container:hover .card-body {
-	transform: rotateY(180deg);
+// .card-container:hover .card-body {
+// 	transform: rotateY(180deg);
+// }
+.flip-card {
+	color: #ff0000;
+}
+.flip {
+	.card-body {
+		transform: rotateY(180deg);
+	}
 }
 .card-front,
 .card-back {

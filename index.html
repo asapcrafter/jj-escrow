@@ -110,29 +110,38 @@
 				</h2>
 			</div>
 			<div class="container">
-				<div
-					class="row row-cols-1 row-cols-md-2 row-cols-xl-4 gy-3 g-xxl-5 mt-2"
-				>
+				<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 gy-3 g-xxl-5 mt-2">
 					<div class="col">
 						<div class="card-container h-100">
-							<div class="card-body">
-								<div class="card-front">
-									<h5 class="card-title">
-										Residential Resale
-									</h5>
-								</div>
-								<div class="card-back">
-									<h5 class="card-title">
-										Residential Resale
-									</h5>
-									<p class="card-text">
-										This is a small description for Card 1.
-									</p>
-								</div>
-							</div>
+              <div class="flip-card">
+                <div class="card-body">
+                  <div class="card-front">
+                    <h5 class="card-title">
+                      Residential Resale
+                    </h5>
+                  </div>
+                  <div class="card-back">
+                    <h5 class="card-title">
+                      Residential Resale
+                    </h5>
+                    <p class="card-text">
+                      This is a small description for Card 1.
+                    </p>
+                  </div>
+                </div>
+              </div>
 						</div>
 					</div>
-					<div class="col">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          <script>
+            $('.card-container').click(function() {
+              $(this).children('.flip-card').toggleClass('flip');
+            });
+            $('div.flip-card').click(function() {
+              console.log("HI")
+            })
+          </script>
+					<!-- <div class="col">
 						<div class="card-container h-100">
 							<div class="card-body">
 								<div class="card-front">
@@ -159,8 +168,8 @@
 								</p>
 							</div>
 						</div>
-					</div>
-					<div class="card-container h-100">
+					</div> -->
+					<!-- <div class="card-container h-100">
 						<div class="card-body">
 							<div class="card-front">
 								<h5 class="card-title">REO</h5>
@@ -185,8 +194,8 @@
 								</p>
 							</div>
 						</div>
-					</div>
-					<div class="card-container h-100">
+					</div> -->
+					<!-- <div class="card-container h-100">
 						<div class="card-body">
 							<div class="card-front">
 								<h5 class="card-title">
@@ -218,7 +227,7 @@
 									This is a small description for Card 1.
 								</p>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
